@@ -6,7 +6,8 @@
 
           <div class="logoWrapper">
             <router-link to="/main">
-              Лого
+              <img class="logoImg" src="../assets/logo.png" alt="logo">
+              <img class="logoImgMb" src="../assets/logo_mb.png" alt="logoMb">
             </router-link>
           </div>
 
@@ -20,17 +21,18 @@
               <router-link to="/events">Події</router-link>
             </div>
 
-            <div @click="staticBody" id="menuToggle">
-              <input type="checkbox" />
+            <div id="menuToggle">
+              <input id="inputBurger" @click="staticBody" type="checkbox" />
               <span></span>
               <span></span>
               <span></span>
               <ul id="menu">
-                <router-link to="/products">Продукти</router-link>
-                <router-link to="/cases">Кейси</router-link>
-                <router-link to="/about-us">Про нас</router-link>
-                <router-link to="/contacts">Контакти</router-link>
-                <router-link to="/events">Події</router-link>
+                <router-link @click="checkInput" to="/home">Головна</router-link>
+                <router-link @click="checkInput" to="/products">Продукти</router-link>
+                <router-link @click="checkInput" to="/cases">Кейси</router-link>
+                <router-link @click="checkInput" to="/about-us">Про нас</router-link>
+                <router-link @click="checkInput" to="/contacts">Контакти</router-link>
+                <router-link @click="checkInput" to="/events">Події</router-link>
               </ul>
             </div>
           </nav>
@@ -53,10 +55,18 @@ export default {
 
   function staticBody() {
     document.body.classList.toggle('static');
+    document.getElementById("menu").classList.toggle('on');
+  }
+
+  function checkInput() {
+    document.getElementById("inputBurger").checked = false;
+    document.getElementById("menu").classList.remove('on');
+    document.body.classList.remove('static');
   }
 
     return {
-      staticBody
+      staticBody,
+      checkInput,
     }
   }
 }
@@ -66,7 +76,13 @@ export default {
 
 .headerWrapper {
   /* background: #f3f3f3; */
-  background: #ffffff;
+  /* background: #262323; */
+  background: #1c1c1c;
+  -webkit-box-shadow: 4px -4px 51px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px -4px 51px 3px rgba(0,0,0,0.75);
+  box-shadow: 4px -4px 51px 3px rgba(0,0,0,0.75);
+
+  
   position: fixed;
   top: 0;
   left: 0;
@@ -79,16 +95,36 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
   /* background: #f3f3f3; */
-  background: #ffffff;
-  padding: 40px 60px;
+  /* background: #262323; */
+  background: #1c1c1c;
+  
+  padding: 10px 60px;
   display: grid;
   gap: 40px;
   grid-template-columns: repeat(2, auto);
   justify-content: space-between;
+  align-items: center;
+}
+
+.logoImg {
+  width: 100px;
+  transition: .5s all ease-in-out;
+}
+
+.logoImg:hover {
+  filter: contrast(135%);
+  transform: scale(1.02);
+  transition: .5s all ease-in-out;
+}
+
+.logoImgMb {
+  display: none;
+  width: 50px;
 }
 
 .navContent a, #menu a {
-  color: #000000;
+  /* color: #e6b329; */
+  color: #ffffff;
 }
 
 .navContent a::after {
@@ -97,7 +133,7 @@ export default {
     width: 0;
     margin-top: 2px;
     height: 2px;
-    background: #000;
+    background: #e6b329;
     transition: width .3s;
 }
 
@@ -114,7 +150,7 @@ export default {
 #menuToggle {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 25px;
   right: 50px;
   z-index: 1;
   -webkit-user-select: none;
@@ -130,7 +166,7 @@ export default {
   left: -5px;
   cursor: pointer;
   opacity: 0;
-  z-index: 2;
+  z-index: 9999;
   -webkit-touch-callout: none;
 }
 
@@ -161,6 +197,11 @@ export default {
   background: #232323;
 }
 
+#menuToggle input:checked ~ span {
+
+  background: #e6e6e6;
+}
+
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
@@ -179,7 +220,7 @@ export default {
   padding: 50px;
   padding-top: 125px;
   right: -100px; */
-  display: grid;
+  display: none;
   gap: 30px;
   justify-items: center;
   align-items: center;
@@ -190,13 +231,17 @@ export default {
   width: 100%;
   height: 100%;
   padding: 50px;
-  background: #fff;
+  background: #1c1c1c;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu.on {
+  display: grid;
 }
 
 #menu li {
@@ -217,6 +262,14 @@ export default {
 
   #menuToggle {
     display: block;
+  }
+
+  .logoImg {
+    display: none;
+  }
+
+  .logoImgMb {
+    display: unset;
   }
 }
 

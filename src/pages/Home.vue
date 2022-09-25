@@ -21,6 +21,10 @@
   <div class="home">
 
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, qui numquam vitae blanditiis sed cupiditate pariatur. Recusandae laboriosam ea cumque dolore officia rerum aspernatur nam, vitae labore necessitatibus fugiat neque iste minus dolorem deserunt in nesciunt aut, fuga ab animi cupiditate quia eaque provident optio. Recusandae reprehenderit accusantium velit rerum consectetur sunt voluptatum voluptatem, qui aperiam veniam cumque optio veritatis mollitia labore quam maxime ullam eligendi magni quaerat repudiandae saepe culpa perspiciatis? Laudantium voluptatum consectetur, corporis voluptate vero ipsa sit doloremque soluta autem facilis hic quae ipsam omnis ipsum alias aspernatur maiores. Itaque optio eveniet ut numquam fuga rem. Nulla.</p>
+    <br class="desktop">
+    <p class="desktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, dolorum?</p>
+    <br>
+    <p class="desktop">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, qui numquam vitae blanditiis sed cupiditate pariatur. Recusandae laboriosam ea cumque dolore officia rerum aspernatur nam, vitae labore necessitatibus fugiat neque iste minus dolorem deserunt in nesciunt aut, fuga ab animi cupiditate quia eaque provident optio. Recusandae reprehenderit accusantium velit rerum consectetur sunt voluptatum voluptatem, qui aperiam veniam cumque optio veritatis mollitia labore quam maxime ullam eligendi magni quaerat repudiandae saepe culpa perspiciatis? Laudantium voluptatum consectetur, corporis voluptate vero ipsa sit doloremque soluta autem facilis hic quae ipsam omnis ipsum alias aspernatur maiores. Itaque optio eveniet ut numquam fuga rem. Nulla.</p>
 
   </div>
 
@@ -41,7 +45,7 @@ export default {
 
 
   setup() {
-    const carouselSlides = ["img-1", "img-2", "img-3"];
+    const carouselSlides = ["img-1", "img-2", "img-3", "img-4"];
     return {
       carouselSlides
     }
@@ -55,6 +59,12 @@ export default {
   padding: 120px 80px 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.home p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #f3f3f3b0;
 }
 
 .carouselWrapper {
@@ -72,6 +82,13 @@ export default {
   top: 50%;
   left: 30%;
   transform: translate(-50%, -30%);
+  transition: .3s all linear;
+}
+
+.carouselWrapper p:hover {
+  cursor: pointer;
+  color: #e6b329;
+  transition: .3s all linear;
 }
 
 .carousel {
@@ -113,6 +130,20 @@ export default {
     line-height: 70px;
     max-width: 200px;
     font-weight: 700;
+  }
+
+}
+
+@media screen and (max-width: 675px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .home {
+    padding: 80px 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
 }
