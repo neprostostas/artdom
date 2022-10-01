@@ -174,4 +174,11 @@ export default {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .imageGroupTwo {
+    grid-template-columns: auto;
+    gap: 15px;
+  }
+}
+
 </style>
