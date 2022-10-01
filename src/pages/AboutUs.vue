@@ -2,13 +2,11 @@
 
     <div class="aboutUs">
 
-      <h2>About Us</h2>
+      <h2 class="title">О компании «ART DOM»</h2>
 
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, qui numquam vitae blanditiis sed cupiditate pariatur. Recusandae laboriosam ea cumque dolore officia rerum aspernatur nam, vitae labore necessitatibus fugiat neque iste minus dolorem deserunt in nesciunt aut, fuga ab animi cupiditate quia eaque provident optio. Recusandae reprehenderit accusantium velit rerum consectetur sunt voluptatum voluptatem, qui aperiam veniam cumque optio veritatis mollitia labore quam maxime ullam eligendi magni quaerat repudiandae saepe culpa perspiciatis? Laudantium voluptatum consectetur, corporis voluptate vero ipsa sit doloremque soluta autem facilis hic quae ipsam omnis ipsum alias aspernatur maiores. Itaque optio eveniet ut numquam fuga rem. Nulla.</p>
-      <br class="desktop">
-      <p class="desktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, dolorum?</p>
-      <br>
-      <p class="desktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde doloremque enim pariatur qui ducimus sunt repudiandae cupiditate sit! Vel labore accusamus rerum voluptate nemo obcaecati ab itaque nostrum error, in totam magnam sit praesentium iusto asperiores eligendi harum explicabo enim quidem doloremque dignissimos perspiciatis! Praesentium dolorum itaque quis corporis sapiente inventore, vel magni non. Mollitia fuga adipisci nam autem facilis, omnis distinctio tempora eos velit atque dolorum, hic numquam doloremque eaque incidunt molestiae ipsum pariatur, accusamus architecto! Modi quo maiores eaque numquam error velit et reprehenderit ullam repellat repellendus atque perspiciatis voluptatibus assumenda, officiis recusandae illum neque eveniet laudantium architecto facere, quia iste! Corporis architecto reiciendis, quos voluptate ex consequuntur. Sit quas consequuntur sunt ad vel accusamus ipsam non et enim necessitatibus beatae officia soluta error, quis, voluptate minus. Repudiandae voluptatum voluptatem, velit eius rem nemo explicabo distinctio beatae, dolorem alias soluta maiores laborum sint quis. Repellat, eos voluptatem?</p>
+      <p>Компания ТОО Art Dom выражает Вам свою признательность и предлагает рассмотреть предложение о сотрудничестве. Наша компания, специализирующийся на дизайне ритейл пространств и разработке ритейл концептов. Мы занимаемся внедрением комплексных "умных" разработок и автоматизированных инновационных решений, которые превращают торговое оборудование в алгоритмизированные и роботизированные системы, а торговые площади — в магазины будущего. Мы являемся эксклюзивным дистрибьютором компании MODERN EXPO (Республика Беларусь) на территории Республики Казахстан.</p>
+      <p>Наши продукты разработаны с использованием самых инновационных подходов и усовершенствованы с помощью передовых конструктивных и программных решений.</p>
+      <p>Предлагаемый ассортимент продукции ТОО «Art Dom»:  Почтовые терминалы, Стеллажные системы , Кассовые боксы , Холодильное оборудование, Оборудование для самообслуживания, Складские стеллажные системы.</p>
 
     </div>
 
@@ -36,6 +34,7 @@ export default {
 }
 
 .aboutUs p {
+  padding: 10px 0;
   font-size: 20px;
   line-height: 30px;
   color: #f3f3f3b0;
@@ -43,16 +42,24 @@ export default {
 
 .aboutUs h2  {
   padding: 15px 0;
-  font-size: 120px;
-  line-height: 140px;
+  font-size: 60px;
+  line-height: 80px;
   color: #ffffffc2;
 }
 
-@media screen and (max-width: 675px) {
-
-  .desktop {
-    display: none;
+@media screen and (max-width: 883px) {
+  .aboutUs .title {
+    max-width: 500px;
   }
+}
+
+@media screen and (max-width: 461px) {
+  .aboutUs .title {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
 
   .aboutUs {
     padding: 80px 20px 0;
@@ -62,8 +69,8 @@ export default {
 
   .aboutUs h2  {
     padding: 15px 0;
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 35px;
+    line-height: 40px;
     color: #ffffffc2;
   }
 }

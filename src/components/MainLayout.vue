@@ -31,4 +31,15 @@ export default {
 
 <style scoped>
 
+main {
+  min-height: calc(100vh - 78.5px);
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    min-height: calc(100vh - 58.5px);
+  }
+}
+
+
 </style>

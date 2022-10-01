@@ -5,7 +5,7 @@
     <div class="footerWrapper">
       <div class="footerAbsolute">
 
-        <p>ARTDOM {{new Date().getFullYear()}}. All rights reserved.</p>
+        <p>ARTDOM {{new Date().getFullYear()}}<span class="desktop">. Все права защищены.</span> </p>
 
       </div>
     </div>
@@ -43,6 +43,7 @@ export default {
   background: #1c1c1c;
   padding: 30px 60px;
   color: #ffffff;
+
 }
 
 .footerAbsolute p {
@@ -53,6 +54,12 @@ export default {
 @media screen and (max-width: 800px) {
   .footerAbsolute {
     padding: 20px 60px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .desktop {
+    display: none;
   }
 }
 

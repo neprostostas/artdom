@@ -1,6 +1,5 @@
 import Home from "@/pages/Home";
 import Products from "@/pages/Products";
-import Cases from "@/pages/Cases";
 import AboutUs from "@/pages/AboutUs";
 import Contacts from "@/pages/Contacts";
 import Events from "@/pages/Events";
@@ -24,11 +23,6 @@ const routes = [
     path: "/products",
     name: "Products",
     component: Products,
-  },
-  {
-    path: "/cases",
-    name: "Cases",
-    component: Cases,
   },
   {
     path: "/about-us",

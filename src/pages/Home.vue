@@ -21,10 +21,6 @@
   <div class="home">
 
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, qui numquam vitae blanditiis sed cupiditate pariatur. Recusandae laboriosam ea cumque dolore officia rerum aspernatur nam, vitae labore necessitatibus fugiat neque iste minus dolorem deserunt in nesciunt aut, fuga ab animi cupiditate quia eaque provident optio. Recusandae reprehenderit accusantium velit rerum consectetur sunt voluptatum voluptatem, qui aperiam veniam cumque optio veritatis mollitia labore quam maxime ullam eligendi magni quaerat repudiandae saepe culpa perspiciatis? Laudantium voluptatum consectetur, corporis voluptate vero ipsa sit doloremque soluta autem facilis hic quae ipsam omnis ipsum alias aspernatur maiores. Itaque optio eveniet ut numquam fuga rem. Nulla.</p>
-    <br class="desktop">
-    <p class="desktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, dolorum?</p>
-    <br>
-    <p class="desktop">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, qui numquam vitae blanditiis sed cupiditate pariatur. Recusandae laboriosam ea cumque dolore officia rerum aspernatur nam, vitae labore necessitatibus fugiat neque iste minus dolorem deserunt in nesciunt aut, fuga ab animi cupiditate quia eaque provident optio. Recusandae reprehenderit accusantium velit rerum consectetur sunt voluptatum voluptatem, qui aperiam veniam cumque optio veritatis mollitia labore quam maxime ullam eligendi magni quaerat repudiandae saepe culpa perspiciatis? Laudantium voluptatum consectetur, corporis voluptate vero ipsa sit doloremque soluta autem facilis hic quae ipsam omnis ipsum alias aspernatur maiores. Itaque optio eveniet ut numquam fuga rem. Nulla.</p>
 
   </div>
 
@@ -135,10 +131,6 @@ export default {
 }
 
 @media screen and (max-width: 675px) {
-
-  .desktop {
-    display: none;
-  }
 
   .home {
     padding: 80px 20px 0;

@@ -14,11 +14,10 @@
           <nav role='navigation'>
 
             <div class="navContent">
-              <router-link to="/products">Продукти</router-link>
-              <router-link to="/cases">Кейси</router-link>
-              <router-link to="/about-us">Про нас</router-link>
-              <router-link to="/contacts">Контакти</router-link>
-              <router-link to="/events">Події</router-link>
+              <router-link to="/products">Ассортимент</router-link>
+              <router-link to="/about-us">О Компании</router-link>
+              <router-link to="/contacts">Контакты</router-link>
+              <router-link to="/events">События</router-link>
             </div>
 
             <div id="menuToggle">
@@ -27,12 +26,11 @@
               <span></span>
               <span></span>
               <ul id="menu">
-                <router-link @click="checkInput" to="/home">Головна</router-link>
-                <router-link @click="checkInput" to="/products">Продукти</router-link>
-                <router-link @click="checkInput" to="/cases">Кейси</router-link>
-                <router-link @click="checkInput" to="/about-us">Про нас</router-link>
-                <router-link @click="checkInput" to="/contacts">Контакти</router-link>
-                <router-link @click="checkInput" to="/events">Події</router-link>
+                <router-link @click="checkInput" to="/home">Главная</router-link>
+                <router-link @click="checkInput" to="/products">Ассортимент</router-link>
+                <router-link @click="checkInput" to="/about-us">О Компании</router-link>
+                <router-link @click="checkInput" to="/contacts">Контакты</router-link>
+                <router-link @click="checkInput" to="/events">События</router-link>
               </ul>
             </div>
           </nav>
@@ -82,7 +80,6 @@ export default {
   -moz-box-shadow: 4px -4px 51px 3px rgba(0,0,0,0.75);
   box-shadow: 4px -4px 51px 3px rgba(0,0,0,0.75);
 
-  
   position: fixed;
   top: 0;
   left: 0;
@@ -150,8 +147,8 @@ export default {
 #menuToggle {
   display: none;
   position: absolute;
-  top: 25px;
-  right: 50px;
+  top: 29px;
+  right: 33px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -270,6 +267,10 @@ export default {
 
   .logoImgMb {
     display: unset;
+  }
+
+  .headerAbsolute {
+    padding: 10px 20px;
   }
 }
 
