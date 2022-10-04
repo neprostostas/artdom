@@ -7,8 +7,14 @@
       <div class="block first">
         <h3>Почтовые терминалы</h3>
         <div class="imageGroupTwo">
-          <img src="../../src/assets/img/post1.jpg" alt="post1">
-          <img src="../../src/assets/img/post2.jpg" alt="post2">
+
+          <router-link to="/products/post">
+            <img src="../../src/assets/img/post1.jpg" alt="post1">
+          </router-link>
+          <router-link to="/products/post">
+            <img src="../../src/assets/img/post2.jpg" alt="post2">
+          </router-link>
+          
         </div>
         <p>РЕШЕНИЕ ДЛЯ ДОСТАВКИ В СЕКТОРАХ РОЗНИЧНОЙ ТОРГОВЛИ И ЛОГИСТИКИ - это часть современной экосистемы доставки от ТОО «Art Dom», объединяющей полноразмерные многофункциональные почтовые терминалы с широким спектром возможностей использования.</p>
       </div>
@@ -16,8 +22,14 @@
       <div class="block">
         <h3>Стеллажные cистемы</h3>
         <div class="imageGroupTwo">
-          <img src="../../src/assets/img/stelage1.jpg" alt="stelage1">
-          <img src="../../src/assets/img/stelage2.jpg" alt="stelage2">
+
+          <router-link to="/products/stelage">
+            <img src="../../src/assets/img/stelage1.jpg" alt="stelage1">
+          </router-link>
+          <router-link to="/products/stelage">
+            <img src="../../src/assets/img/stelage2.jpg" alt="stelage2">
+          </router-link>
+
         </div>
         <p>Беспрецедентный bestseller и надежная основа нашего продуктового ассортимента - стеллажные системы в самых разнообразных их вариациях. Мы объединили лучшие мировые тенденции ритейла с собственным опытом изготовления и реализации оборудования и получили самые современные решения, удовлетворяющие всем актуальным рыночным тенденциям. Модульный дизайн систем позволяет адаптировать их к любым условиям продаж, а широкий спектр аксессуарных дополнений и возможных комбинаций позволяет превратить базовые конструкции систем на индивидуальные решения именно для вашего пространства.</p>
       </div>
@@ -25,8 +37,14 @@
       <div class="block">
         <h3>Кассовые боксы</h3>
         <div class="imageGroupTwo">
-          <img src="../../src/assets/img/box1.jpg" alt="box1">
-          <img src="../../src/assets/img/box2.jpg" alt="box2">
+
+          <router-link to="/products/boxes">
+            <img src="../../src/assets/img/box1.jpg" alt="box1">
+          </router-link>
+          <router-link to="/products/boxes">
+            <img src="../../src/assets/img/box2.jpg" alt="box2">
+          </router-link>
+
         </div>
         <p>Современные покупатели в значительной степени ориентируются на опыт и желают качественного и быстрого обслуживания. Эти факторы приводят к основательным изменениям в имидже классических магазинов. Трансформация торговой площади требует эволюции оборудования и методов оплаты, внедрения новых концептов и программных средств.Кассовые боксы EVO CELINE созданы, чтобы удовлетворить ожидания самых требовательных клиентов, гарантируя скорость, удобство и персонализацию покупательского опыта.</p>
       </div>
@@ -34,7 +52,9 @@
       <div class="block">
         <h3>Холодильное оборудование</h3>
         <div class="imageGroupOne">
-          <img src="../../src/assets/img/fridge1.jpg" alt="fridge1">
+          <router-link to="/products/fridges">
+            <img src="../../src/assets/img/fridge1.jpg" alt="fridge1">
+          </router-link>
         </div>
         <p>Современные и экологически безопасные вертикальные многоярусные витрины COOLES DECK, отвечающие последним тенденциям рынка, а также требованиям ЕС по энергоэффективности, Подходят для всех типов магазинов.</p>
       </div>
@@ -42,7 +62,9 @@
       <div class="block">
         <h3>Оборудование для самообслуживания</h3>
         <div class="imageGroupOne">
-          <img src="../../src/assets/img/self1.jpg" alt="self1">
+          <router-link to="/products/self">
+            <img src="../../src/assets/img/self1.jpg" alt="self1">
+          </router-link>
         </div>
         <p>Самообслуживание и создание новых возможностей с помощью цифровых технологий - приоритетные направления совершенствования современного ритейла. Кассы самообслуживания SELINE OT Modern Expo предоставляют покупателям удобные и эффективные инструменты для совершения покупок и улучшают качество покупок с помощью цифровых технологий.</p>
       </div>
@@ -50,7 +72,9 @@
       <div class="block">
         <h3>Складские cтеллажные cистемы</h3>
         <div class="imageGroupOne">
-          <img src="../../src/assets/img/storage1.jpg" alt="storage1">
+          <router-link to="/products/storage">
+            <img src="../../src/assets/img/storage1.jpg" alt="storage1">
+          </router-link>
         </div>
         <p>Мы предлагаем безопасные, эффективные, модульные СКЛАДСКИЕ СТЕЛЛАЖИ для розничной торговли, производства, фулфилмент-центров, дарксторов, фармацевтических компаний, электронной коммерции, почтовых и курьерских служб.</p>
       </div>
@@ -60,6 +84,8 @@
 </template>
 
 <script>
+
+// import {onBeforeMount} from "vue";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -92,7 +118,7 @@ export default {
 }
 
 .block:hover {
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: .5s all ease-in-out;
   -webkit-box-shadow: -1px 3px 22px -11px rgba(255,255,255,1);
   -moz-box-shadow: -1px 3px 22px -11px rgba(255,255,255,1);
