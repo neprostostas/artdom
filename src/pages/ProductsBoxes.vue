@@ -11,7 +11,7 @@
         </video>
       </div>
 
-      <img id="img-tag" src="video.mp4"/>
+      <img id="img-tag" src="../../src/assets/video/box1.mp4"/>
 
       <div>
         <div class="imageGroupTwo">
