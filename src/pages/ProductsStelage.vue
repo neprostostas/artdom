@@ -5,7 +5,7 @@
       <h2>Стеллажные cистемы</h2>
 
       <div class="videoWrapper">
-        <video width="100%" height="100%" autoplay muted>
+        <video width="100%" height="100%" autoplay loop muted playsinline>
           <source src="../../src/assets/video/stelage1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
