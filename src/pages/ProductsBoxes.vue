@@ -4,12 +4,25 @@
 
       <h2>Кассовые боксы</h2>
 
+      <div class="videoWrapper">
+        <video width="100%" height="100%" autoplay muted>
+          <source src="../../src/assets/video/box1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
       <div>
         <div class="imageGroupTwo">
-          <img src="../../src/assets/img/box1.jpg" alt="box1">
-          <img src="../../src/assets/img/box2.jpg" alt="box2">
+          <div class="part">
+            <img src="../../src/assets/img/box1.jpg" alt="box1">
+            <img src="../../src/assets/img/box2.jpg" alt="box2">
+          </div>
+          <div class="part">
+            <img src="../../src/assets/img/box3.jpg" alt="box3">
+            <img src="../../src/assets/img/box4.jpg" alt="box4">
+          </div>
         </div>
-        <p>Современные покупатели в значительной степени ориентируются на опыт и желают качественного и быстрого обслуживания. Эти факторы приводят к основательным изменениям в имидже классических магазинов. Трансформация торговой площади требует эволюции оборудования и методов оплаты, внедрения новых концептов и программных средств.Кассовые боксы EVO CELINE созданы, чтобы удовлетворить ожидания самых требовательных клиентов, гарантируя скорость, удобство и персонализацию покупательского опыта.</p>
+        <p class="text">Современные покупатели в значительной степени ориентируются на опыт и желают качественного и быстрого обслуживания. Эти факторы приводят к основательным изменениям в имидже классических магазинов. Трансформация торговой площади требует эволюции оборудования и методов оплаты, внедрения новых концептов и программных средств.Кассовые боксы EVO CELINE созданы, чтобы удовлетворить ожидания самых требовательных клиентов, гарантируя скорость, удобство и персонализацию покупательского опыта.</p>
       </div>
 
     </div>
@@ -93,6 +106,12 @@ export default {
     width: 100%;
 }
 
+.part {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+}
+
 .products {
   padding: 120px 80px 20px;
   max-width: 1200px;
@@ -110,6 +129,10 @@ export default {
   font-size: 60px;
   line-height: 80px;
   color: #ffffffc2;
+}
+
+.text {
+  padding: 0 0 20px;
 }
 
 @media screen and (max-width: 800px) {
@@ -132,6 +155,12 @@ export default {
   .imageGroupTwo {
     grid-template-columns: auto;
     gap: 15px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .part {
+   grid-template-columns: auto;
   }
 }
 

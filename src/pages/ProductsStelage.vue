@@ -4,12 +4,25 @@
 
       <h2>Стеллажные cистемы</h2>
 
+      <div class="videoWrapper">
+        <video width="100%" height="100%" autoplay muted>
+          <source src="../../src/assets/video/stelage1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
       <div>
         <div class="imageGroupTwo">
+          <div class="part">
             <img src="../../src/assets/img/stelage1.jpg" alt="stelage1">
             <img src="../../src/assets/img/stelage2.jpg" alt="stelage2">
+          </div>
+          <div class="part">
+            <img src="../../src/assets/img/stelage3.jpg" alt="stelage3">
+            <img src="../../src/assets/img/stelage4.jpg" alt="stelage4">
+          </div>
         </div>
-        <p>Беспрецедентный bestseller и надежная основа нашего продуктового ассортимента - стеллажные системы в самых разнообразных их вариациях. Мы объединили лучшие мировые тенденции ритейла с собственным опытом изготовления и реализации оборудования и получили самые современные решения, удовлетворяющие всем актуальным рыночным тенденциям. Модульный дизайн систем позволяет адаптировать их к любым условиям продаж, а широкий спектр аксессуарных дополнений и возможных комбинаций позволяет превратить базовые конструкции систем на индивидуальные решения именно для вашего пространства.</p>
+        <p class="text">Беспрецедентный bestseller и надежная основа нашего продуктового ассортимента - стеллажные системы в самых разнообразных их вариациях. Мы объединили лучшие мировые тенденции ритейла с собственным опытом изготовления и реализации оборудования и получили самые современные решения, удовлетворяющие всем актуальным рыночным тенденциям. Модульный дизайн систем позволяет адаптировать их к любым условиям продаж, а широкий спектр аксессуарных дополнений и возможных комбинаций позволяет превратить базовые конструкции систем на индивидуальные решения именно для вашего пространства.</p>
       </div>
 
     </div>
@@ -77,6 +90,12 @@ export default {
   color: #ffffffc2;
 }
 
+.part {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+}
+
 .imageGroupTwo {
   display: grid;
   padding: 20px 0;
@@ -112,6 +131,10 @@ export default {
   color: #ffffffc2;
 }
 
+.text {
+  padding: 0 0 20px;
+}
+
 @media screen and (max-width: 800px) {
 
   .products {
@@ -125,6 +148,12 @@ export default {
     font-size: 35px;
     line-height: 40px;
     color: #ffffffc2;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .part {
+   grid-template-columns: auto;
   }
 }
 

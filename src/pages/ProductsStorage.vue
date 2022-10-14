@@ -4,16 +4,22 @@
 
       <h2>Складские cтеллажные cистемы</h2>
 
-      <div>
-        <div class="imageGroupOne">
-            <img src="../../src/assets/img/storage1.jpg" alt="storage1">
-        </div>
-        <p>Мы предлагаем безопасные, эффективные, модульные СКЛАДСКИЕ СТЕЛЛАЖИ для розничной торговли, производства, фулфилмент-центров, дарксторов, фармацевтических компаний, электронной коммерции, почтовых и курьерских служб.</p>
+      <div class="videoWrapper">
+        <video width="100%" height="100%" autoplay muted>
+          <source src="../../src/assets/video/storage1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
 
+      <div>
+        <div class="imageGroupOne"></div>
+      </div>
+      
+      <p class="text">Мы предлагаем безопасные, эффективные, модульные СКЛАДСКИЕ СТЕЛЛАЖИ для розничной торговли, производства, фулфилмент-центров, дарксторов, фармацевтических компаний, электронной коммерции, почтовых и курьерских служб.</p>
+    
     </div>
-
-</template>
+    
+  </template>
 
 <script>
 
@@ -113,6 +119,10 @@ export default {
   font-size: 60px;
   line-height: 80px;
   color: #ffffffc2;
+}
+
+.text {
+  padding: 0 0 20px;
 }
 
 @media screen and (max-width: 800px) {
