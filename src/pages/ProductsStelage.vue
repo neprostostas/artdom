@@ -5,11 +5,13 @@
       <h2>Стеллажные cистемы</h2>
 
       <div class="videoWrapper">
-        <video width="100%" height="100%" autoplay loop muted playsinline>
+        <video id="video-tag" width="100%" height="100%" autoplay loop muted>
           <source src="../../src/assets/video/stelage1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
+
+      <img id="img-tag" src="video.mp4"/>
 
       <div>
         <div class="imageGroupTwo">
@@ -31,7 +33,7 @@
 
 <script>
 
-import {onBeforeMount} from "vue";
+import {onBeforeMount, onMounted} from "vue";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -39,11 +41,26 @@ export default {
 
   setup() {
 
+    function BrowserDetection() {
+
+      //Check if browser is Safari, if it is, hide the <video> tag, otherwise hide the <img> tag
+      if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+          document.getElementById('video-tag').style.display= "none";
+      } else {
+          document.getElementById('img-tag').style.display= "none";
+      }               
+
+    }
+
     onBeforeMount(() => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+    })
+
+    onMounted(() => {
+      BrowserDetection();
     })
 
     return { }
