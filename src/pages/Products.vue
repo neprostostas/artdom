@@ -67,6 +67,16 @@
         </div>
       </router-link>
 
+      <router-link to="/products/storage-rooms">
+        <div class="block">
+          <h3>Камеры хранения</h3>
+          <div class="imageGroupOne">
+            <img src="../../src/assets/img/storage-rooms1.png" alt="storage-rooms1">
+          </div>
+          <p>Модульная конструкция, безопасное хранение и дистанционное управление позволяют установить автоматизированную камеру хранения в любом, удобном для пользователя, месте.</p>
+        </div>
+      </router-link>
+
     </div>
 
 </template>

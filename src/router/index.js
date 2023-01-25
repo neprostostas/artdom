@@ -6,6 +6,7 @@ import ProductsBoxes from "@/pages/ProductsBoxes";
 import ProductsFridges from "@/pages/ProductsFridges";
 import ProductsSelf from "@/pages/ProductsSelf";
 import ProductsStorage from "@/pages/ProductsStorage";
+import ProductsStorageRooms from "@/pages/ProductsStorageRooms";
 import AboutUs from "@/pages/AboutUs";
 import Contacts from "@/pages/Contacts";
 import Events from "@/pages/Events";
@@ -74,6 +75,11 @@ const routes = [
     path: "/products/storage",
     name: "ProductsStorage",
     component: ProductsStorage,
+  },
+  {
+    path: "/products/storage-rooms",
+    name: "ProductsStorageRooms",
+    component: ProductsStorageRooms,
   },
 ];
 
