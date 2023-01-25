@@ -28,8 +28,7 @@ import Carousel from "../components/Carousel.vue";
 import Slide from "../components/Slide.vue";
 
 export default {
-  // eslint-disable-next-line vue/multi-word-component-names
-  name: 'home',
+  name: 'Home',
   components: {
     Carousel,
     Slide

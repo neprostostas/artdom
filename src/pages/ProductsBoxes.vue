@@ -11,7 +11,7 @@
         </video>
       </div>
 
-      <img id="img-tag" src="../../src/assets/video/box1.mp4"/>
+      <img id="img-tag" src="../../src/assets/video/box1.mp4" alt="img-tag"/>
 
       <div>
         <div class="imageGroupTwo">
@@ -36,7 +36,6 @@
 import {onBeforeMount, onMounted} from "vue";
 
 export default {
-  // eslint-disable-next-line vue/multi-word-component-names
   name: 'Products',
 
   setup() {
@@ -77,7 +76,6 @@ export default {
 }
 
 .block {
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);

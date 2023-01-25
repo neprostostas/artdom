@@ -20,7 +20,6 @@
 import {onBeforeMount} from "vue";
 
 export default {
-  // eslint-disable-next-line vue/multi-word-component-names
   name: 'Products',
 
   setup() {
@@ -39,61 +38,14 @@ export default {
 
 <style scoped>
 
-.block {
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 15px;
-  padding: 30px 20px 10px;
-  margin: 40px 0;
-  transition: .5s all ease-in-out;
-}
-
-.block:hover {
-  transition: .5s all ease-in-out;
-  -webkit-box-shadow: -1px 3px 22px -11px rgba(255,255,255,1);
-  -moz-box-shadow: -1px 3px 22px -11px rgba(255,255,255,1);
-  box-shadow: -1px 3px 22px -11px rgba(255,255,255,1);
-  backdrop-filter: blur(11.5px);
-  -webkit-backdrop-filter: blur(11.5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.block h3 {
-  padding: 20px 0 30px;
-  font-weight: 300;
-  font-size: 26px;
-  line-height: 22px;
-  color: #e6b329;
-}
-
-.block p {
-  padding: 25px 0 10px;
-  font-weight: 400;
-  font-size: 16px;
-  color: #ffffffc2;
-}
-
 .imageGroupOne {
   padding: 20px 0;
-}
-
-.imageGroupTwo {
-  display: grid;
-  padding: 20px 0;
-  gap: 30px;
 }
 
 .imageGroupOne img {
   cursor: pointer;
   width: 100%;
   margin: 0 auto;
-}
-
-.imageGroupTwo img {
-    width: 100%;
 }
 
 .products {
@@ -132,13 +84,6 @@ export default {
     font-size: 35px;
     line-height: 40px;
     color: #ffffffc2;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .imageGroupTwo {
-    grid-template-columns: auto;
-    gap: 15px;
   }
 }
 
