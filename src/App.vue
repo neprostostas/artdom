@@ -54,7 +54,7 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
     font-family: 'DMSans', sans-serif;
     /* transition: .5s all ease-in-out; */
   }

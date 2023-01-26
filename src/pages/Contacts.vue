@@ -28,7 +28,7 @@ export default {
 
 <style scoped>
 .contacts {
-  padding: 120px 80px 20px;
+  padding: 150px 80px 50px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -49,7 +49,7 @@ export default {
 @media screen and (max-width: 800px) {
 
   .contacts {
-    padding: 80px 20px 0;
+    padding: 100px 20px 20px;
     max-width: 1200px;
     margin: 0 auto;
   }
