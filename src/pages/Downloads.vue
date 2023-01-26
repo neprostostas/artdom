@@ -1,28 +1,35 @@
 <template>
 
-    <div class="downloads">
+  <div class="downloads">
 
-      <h2>Скачать</h2>
+    <h2>Скачать</h2>
 
-      <p class="pb-40">Наши Каталоги</p>
+    <p class="pb-40">Наши Каталоги</p>
 
-      <div class="wrapper-catalog">
-        <template v-for="(file, ind) in catalog" :key="ind">
-          <button class="catalog-button" @click="downloadFile(file.title, file.link)">{{file.title}}</button>
-        </template>
-      </div>
-
+    <div class="wrapper-catalog">
+      <template v-for="(file, ind) in catalog" :key="ind">
+        <button class="catalog-button" @click="downloadFile(file.title, file.link)">{{file.title}}</button>
+      </template>
     </div>
+
+  </div>
+
+  <Loader v-if="loader" />
 
 </template>
 
 <script>
 import axios from "axios";
+import Loader from "@/components/base/Loader.vue";
+import {ref} from "vue";
 
 export default {
   name: 'Downloads',
+  components: {Loader},
 
   setup() {
+
+    const loader = ref(false)
 
     const catalog = [
       {title: "Кассовые зоны", link: "https://res.cloudinary.com/dhmgbmdm7/raw/upload/v1674750553/ARTDOM%20%7C%20%D0%9A%D0%B0%D1%81%D1%81%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B7%D0%BE%D0%BD%D1%8B.pptx"},
@@ -31,6 +38,7 @@ export default {
     ]
 
     async function downloadFile(title, l) {
+      loader.value = true;
       try {
         const response = await axios.get(l, {
           responseType: 'blob',
@@ -44,12 +52,15 @@ export default {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+        loader.value = false;
       } catch (error) {
         console.error(error);
+        loader.value = false;
       }
+      loader.value = false;
     }
 
-    return { downloadFile, catalog }
+    return { downloadFile, catalog, loader }
   }
 }
 </script>
