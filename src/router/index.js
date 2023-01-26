@@ -10,19 +10,20 @@ import ProductsStorageRooms from "@/pages/ProductsStorageRooms";
 import AboutUs from "@/pages/AboutUs";
 import Contacts from "@/pages/Contacts";
 import Events from "@/pages/Events";
+import Downloads from "@/pages/Downloads";
 
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 function redirect() {
 
-  return '/home'
+  return '/'
 
 }
 
 const routes = [
   { path: "/:catchAll(.*)", redirect: redirect() },
   {
-    path: "/home",
+    path: "/",
     name: "Home",
     component: Home,
   },
@@ -81,10 +82,15 @@ const routes = [
     name: "ProductsStorageRooms",
     component: ProductsStorageRooms,
   },
+  {
+    path: "/downloads",
+    name: "Downloads",
+    component: Downloads,
+  },
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
 
