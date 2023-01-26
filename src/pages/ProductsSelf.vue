@@ -11,6 +11,17 @@
         <p class="text">Самообслуживание и создание новых возможностей с помощью цифровых технологий - приоритетные направления совершенствования современного ритейла. Кассы самообслуживания SELINE OT Modern Expo предоставляют покупателям удобные и эффективные инструменты для совершения покупок и улучшают качество покупок с помощью цифровых технологий.</p>
       </div>
 
+      <h3 class="projects p-tb">Проекты</h3>
+
+      <div>
+        <div class="imageGroupOne">
+          <img src="../../src/assets/img/self2.png" alt="self2">
+        </div>
+        <div class="imageGroupOne">
+          <img src="../../src/assets/img/self3.png" alt="self3">
+        </div>
+      </div>
+
     </div>
 
 </template>
@@ -37,6 +48,17 @@ export default {
 </script>
 
 <style scoped>
+
+
+.projects {
+  font-size: 1.8em;
+  line-height: 30px;
+  color: #f3f3f3b0;
+}
+
+.p-tb {
+  padding: 40px 0 30px;
+}
 
 .imageGroupOne {
   padding: 20px 0;
@@ -84,6 +106,14 @@ export default {
     font-size: 35px;
     line-height: 40px;
     color: #ffffffc2;
+  }
+}
+
+@media screen and (max-width: 405px) {
+
+  .products h2  {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 

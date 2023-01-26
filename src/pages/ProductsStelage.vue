@@ -27,6 +27,55 @@
         <p class="text">Беспрецедентный bestseller и надежная основа нашего продуктового ассортимента - стеллажные системы в самых разнообразных их вариациях. Мы объединили лучшие мировые тенденции ритейла с собственным опытом изготовления и реализации оборудования и получили самые современные решения, удовлетворяющие всем актуальным рыночным тенденциям. Модульный дизайн систем позволяет адаптировать их к любым условиям продаж, а широкий спектр аксессуарных дополнений и возможных комбинаций позволяет превратить базовые конструкции систем на индивидуальные решения именно для вашего пространства.</p>
       </div>
 
+      <h3 class="projects p-tb">Проекты</h3>
+
+      <div>
+        <div class="imageGroupOne">
+          <img src="../../src/assets/img/stelage5.png" alt="stelage5">
+        </div>
+
+        <div class="imageGroupTwo">
+          <div class="part">
+            <img src="../../src/assets/img/stelage6.png" alt="stelage6">
+            <img src="../../src/assets/img/stelage7.png" alt="stelage7">
+          </div>
+        </div>
+
+        <div class="imageGroupOne">
+          <img src="../../src/assets/img/stelage8.png" alt="stelage8">
+        </div>
+
+        <div class="imageGroupTwo">
+          <div class="part">
+            <img src="../../src/assets/img/stelage9.png" alt="stelage9">
+            <img src="../../src/assets/img/stelage10.png" alt="stelage10">
+          </div>
+        </div>
+
+        <div class="imageGroupTwo">
+          <div class="part">
+            <img src="../../src/assets/img/stelage11.png" alt="stelage11">
+            <img src="../../src/assets/img/stelage12.png" alt="stelage12">
+          </div>
+        </div>
+
+        <div class="imageGroupOne">
+          <img src="../../src/assets/img/stelage13.png" alt="stelage13">
+        </div>
+        <div class="imageGroupOne">
+          <img src="../../src/assets/img/stelage14.png" alt="stelage14">
+        </div>
+        <div class="imageGroupOne">
+          <img src="../../src/assets/img/stelage15.png" alt="stelage15">
+        </div>
+        <div class="imageGroupOne">
+          <img src="../../src/assets/img/stelage16.png" alt="stelage16">
+        </div>
+        <div class="imageGroupOne">
+          <img src="../../src/assets/img/stelage17.png" alt="stelage17">
+        </div>
+      </div>
+
     </div>
 
 </template>
@@ -68,6 +117,16 @@ export default {
 </script>
 
 <style scoped>
+
+.projects {
+  font-size: 1.8em;
+  line-height: 30px;
+  color: #f3f3f3b0;
+}
+
+.p-tb {
+  padding: 40px 0 30px;
+}
 
 #img-tag {
   width: 100%;
