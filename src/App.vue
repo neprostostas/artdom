@@ -59,4 +59,8 @@ export default {
     /* transition: .5s all ease-in-out; */
   }
 
+  video {
+    width: 100%;
+  }
+
 </style>

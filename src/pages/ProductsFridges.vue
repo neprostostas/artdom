@@ -11,6 +11,18 @@
         <p class="text">Современные и экологически безопасные вертикальные многоярусные витрины COOLES DECK, отвечающие последним тенденциям рынка, а также требованиям ЕС по энергоэффективности, Подходят для всех типов магазинов.</p>
       </div>
 
+      <div class="imageGroupTwo">
+        <div class="part fit">
+          <img src="../../src/assets/img/fridge1_1.jpeg" alt="fridge1_1">
+          <img src="../../src/assets/img/fridge1_2.jpeg" alt="fridge1_2">
+        </div>
+      </div>
+
+      <h3 class="projects p-tb">Агрегат компрессорный-конденсаторный</h3>
+      <div class="imageGroupOne">
+        <img class="vw40" src="../../src/assets/img/fridge1_3.jpeg" alt="fridge1_3">
+      </div>
+
       <h3 class="projects p-tb">Проекты</h3>
 
       <div>
@@ -103,6 +115,16 @@ export default {
   width: 100%;
 }
 
+.imageGroupTwo .part.fit img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.imageGroupOne img.vw40 {
+  max-width: 1040px;
+  width: 35vw;
+}
+
 .part {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -139,6 +161,10 @@ export default {
 }
 
 @media screen and (max-width: 800px) {
+
+  .imageGroupOne img.vw40 {
+    width: 100%;
+  }
 
   .products {
     padding: 80px 20px 0;

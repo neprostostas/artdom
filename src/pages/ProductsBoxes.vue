@@ -5,13 +5,10 @@
       <h2>Кассовые боксы</h2>
 
       <div class="videoWrapper">
-        <video id="video-tag" width="100%" height="100%" autoplay loop muted>
+        <video id="video-tag" playsinline autoplay loop muted>
           <source src="../../src/assets/video/box1.mp4" type="video/mp4">
-          Your browser does not support the video tag.
         </video>
       </div>
-
-      <img id="img-tag" src="../../src/assets/video/box1.mp4" alt="img-tag"/>
 
       <div>
         <div class="imageGroupTwo">
@@ -26,6 +23,15 @@
         </div>
         <p class="text">Современные покупатели в значительной степени ориентируются на опыт и желают качественного и быстрого обслуживания. Эти факторы приводят к основательным изменениям в имидже классических магазинов. Трансформация торговой площади требует эволюции оборудования и методов оплаты, внедрения новых концептов и программных средств.Кассовые боксы EVO CELINE созданы, чтобы удовлетворить ожидания самых требовательных клиентов, гарантируя скорость, удобство и персонализацию покупательского опыта.</p>
       </div>
+
+      <h3 class="projects p-tb">Зона закассовая с гранитной столешницей, мойкой Width</h3>
+
+      <div class="imageGroupOne">
+        <img src="../../src/assets/img/box1_1.jpeg" alt="box1_1">
+        <img src="../../src/assets/img/box1_2.jpeg" alt="box1_2">
+        <img src="../../src/assets/img/box1_3.jpeg" alt="box1_3">
+      </div>
+
 
       <h3 class="projects p-tb">Проекты</h3>
 
@@ -45,24 +51,12 @@
 
 <script>
 
-import {onBeforeMount, onMounted} from "vue";
+import { onBeforeMount } from "vue";
 
 export default {
   name: 'Products',
 
   setup() {
-
-
-    function BrowserDetection() {
-
-      //Check if browser is Safari, if it is, hide the <video> tag, otherwise hide the <img> tag
-      if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-          document.getElementById('video-tag').style.display= "none";
-      } else {
-          document.getElementById('img-tag').style.display= "none";
-      }               
-
-    }
 
     onBeforeMount(() => {
         window.scrollTo({
@@ -71,11 +65,9 @@ export default {
           });
     })
 
-    onMounted(() => {
-      BrowserDetection();
-    })
+    return {
 
-    return { }
+    }
   }
 }
 </script>
@@ -90,11 +82,6 @@ export default {
 
 .p-tb {
   padding: 40px 0 30px;
-}
-
-#img-tag {
-  width: 100%;
-  height: 100%;
 }
 
 .imageGroupTwo {
