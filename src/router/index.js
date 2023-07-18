@@ -9,7 +9,7 @@ import ProductsStorage from "@/pages/ProductsStorage";
 import ProductsStorageRooms from "@/pages/ProductsStorageRooms";
 import AboutUs from "@/pages/AboutUs";
 import Contacts from "@/pages/Contacts";
-import Events from "@/pages/Events";
+import Development from "@/pages/Development";
 import Downloads from "@/pages/Downloads";
 
 import { createRouter, createWebHistory } from "vue-router";
@@ -43,9 +43,9 @@ const routes = [
     component: Contacts,
   },
   {
-    path: "/events",
-    name: "Events",
-    component: Events,
+    path: "/development",
+    name: "Development",
+    component: Development,
   },
   {
     path: "/products/post",

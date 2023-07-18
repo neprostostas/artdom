@@ -16,8 +16,8 @@
             <div class="navContent">
               <router-link to="/products">Ассортимент</router-link>
               <router-link to="/about-us">О Компании</router-link>
+              <router-link to="/development">Веб-разработка</router-link>
               <router-link to="/contacts">Контакты</router-link>
-              <router-link to="/events">События</router-link>
               <router-link to="/downloads" class="no-after a-download">
                 <svg class="download" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#ffffff" viewBox="0 0 24 24">
                   <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" stroke-width="0.5"/>
@@ -42,8 +42,8 @@
                 <router-link @click="checkInput" to="/">Главная</router-link>
                 <router-link @click="checkInput" to="/products">Ассортимент</router-link>
                 <router-link @click="checkInput" to="/about-us">О Компании</router-link>
+                <router-link @click="checkInput" to="/development">Веб-разработка</router-link>
                 <router-link @click="checkInput" to="/contacts">Контакты</router-link>
-                <router-link @click="checkInput" to="/events">События</router-link>
               </ul>
             </div>
           </nav>
