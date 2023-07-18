@@ -6,7 +6,7 @@
 
       <p>С уважением и наилучшими пожеланиями, <br>
           ВАШ «ART DOM» <br>
-          Mob/tel: +7 777 491 98 36 <br>
+          Mob/tel: +7 778 788 36 41<br>
           Email: artdom1904@gmail.com
       </p>
 
