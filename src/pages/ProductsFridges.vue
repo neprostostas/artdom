@@ -4,59 +4,69 @@
 
       <h2>Холодильное оборудование</h2>
 
-      <div>
+      <template v-if="true">
         <div class="imageGroupOne">
-          <img src="../../src/assets/img/fridge1.jpg" alt="fridge1">
+          <img v-for="(image, index) in images" :key="index" :src="image.src" :alt="image.alt" />
         </div>
-        <p class="text">Современные и экологически безопасные вертикальные многоярусные витрины COOLES DECK, отвечающие последним тенденциям рынка, а также требованиям ЕС по энергоэффективности, Подходят для всех типов магазинов.</p>
-      </div>
+      </template>
 
-      <div class="imageGroupTwo">
-        <div class="part fit">
-          <img src="../../src/assets/img/fridge1_1.jpeg" alt="fridge1_1">
-          <img src="../../src/assets/img/fridge1_2.jpeg" alt="fridge1_2">
-        </div>
-      </div>
+      <template v-if="false">
 
-      <h3 class="projects p-tb">Агрегат компрессорный-конденсаторный</h3>
-      <div class="imageGroupOne">
-        <img class="vw40" src="../../src/assets/img/fridge1_3.jpeg" alt="fridge1_3">
-      </div>
-
-      <h3 class="projects p-tb">Проекты</h3>
-
-      <div>
-        <div class="imageGroupOne">
-          <img src="../../src/assets/img/fridge3.png" alt="fridge3">
-          <img src="../../src/assets/img/fridge2.png" alt="fridge2">
-        </div>
-
-        <div class="imageGroupOne">
-          <img src="../../src/assets/img/fridge4.png" alt="fridge4">
-          <img src="../../src/assets/img/fridge5.png" alt="fridge5">
-        </div>
-
-        <div class="imageGroupOne">
-          <img src="../../src/assets/img/fridge6.png" alt="fridge6">
-          <img src="../../src/assets/img/fridge7.png" alt="fridge7">
+        <div>
+          <div class="imageGroupOne">
+            <img src="../../src/assets/img/fridge1.jpg" alt="fridge1">
+          </div>
+          <p class="text">Современные и экологически безопасные вертикальные многоярусные витрины COOLES DECK, отвечающие последним тенденциям рынка, а также требованиям ЕС по энергоэффективности, Подходят для всех типов магазинов.</p>
         </div>
 
         <div class="imageGroupTwo">
-          <div class="part">
-            <img src="../../src/assets/img/fridge8.png" alt="fridge8">
-            <img src="../../src/assets/img/fridge9.png" alt="fridge9">
-          </div>
-          <div class="part">
-            <img src="../../src/assets/img/fridge10.png" alt="fridge10">
-            <img src="../../src/assets/img/fridge11.png" alt="fridge11">
+          <div class="part fit">
+            <img src="../../src/assets/img/fridge1_1.jpeg" alt="fridge1_1">
+            <img src="../../src/assets/img/fridge1_2.jpeg" alt="fridge1_2">
           </div>
         </div>
 
+        <h3 class="projects p-tb">Агрегат компрессорный-конденсаторный</h3>
         <div class="imageGroupOne">
-          <img src="../../src/assets/img/fridge12.png" alt="fridge12">
+          <img class="vw40" src="../../src/assets/img/fridge1_3.jpeg" alt="fridge1_3">
         </div>
 
-      </div>
+        <h3 class="projects p-tb">Проекты</h3>
+
+        <div>
+          <div class="imageGroupOne">
+            <img src="../../src/assets/img/fridge3.png" alt="fridge3">
+            <img src="../../src/assets/img/fridge2.png" alt="fridge2">
+          </div>
+
+          <div class="imageGroupOne">
+            <img src="../../src/assets/img/fridge4.png" alt="fridge4">
+            <img src="../../src/assets/img/fridge5.png" alt="fridge5">
+          </div>
+
+          <div class="imageGroupOne">
+            <img src="../../src/assets/img/fridge6.png" alt="fridge6">
+            <img src="../../src/assets/img/fridge7.png" alt="fridge7">
+          </div>
+
+          <div class="imageGroupTwo">
+            <div class="part">
+              <img src="../../src/assets/img/fridge8.png" alt="fridge8">
+              <img src="../../src/assets/img/fridge9.png" alt="fridge9">
+            </div>
+            <div class="part">
+              <img src="../../src/assets/img/fridge10.png" alt="fridge10">
+              <img src="../../src/assets/img/fridge11.png" alt="fridge11">
+            </div>
+          </div>
+
+          <div class="imageGroupOne">
+            <img src="../../src/assets/img/fridge12.png" alt="fridge12">
+          </div>
+
+        </div>
+
+      </template>
 
     </div>
 
@@ -64,7 +74,7 @@
 
 <script>
 
-import {onBeforeMount} from "vue";
+import {onBeforeMount, onMounted, ref} from "vue";
 
 export default {
   name: 'Products',
@@ -78,7 +88,19 @@ export default {
           });
     })
 
-    return { }
+    const images = ref([])
+
+    onMounted(async () => {
+      for (let i = 1; i <= 36; i++) {
+        const src = require(`@/assets/img/fridges_new/${i}.png`)
+        const alt = `fridge+&${i}`
+        images.value.push({ src, alt })
+      }
+    })
+
+    return {
+      images
+    }
   }
 }
 </script>
