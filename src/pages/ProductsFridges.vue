@@ -4,7 +4,7 @@
 
       <h2>Холодильное оборудование</h2>
 
-      <template v-if="true">
+      <template v-if="false">
         <div class="imageGroupOne">
           <img v-for="(image, index) in images" :key="index" :src="image.src" :alt="image.alt" />
         </div>
@@ -68,6 +68,12 @@
 
       </template>
 
+      <template v-if="true">
+        <div class="imageGroupOne">
+          <img v-for="(image, index) in images" :key="index" :src="image.src" :alt="image.alt" />
+        </div>
+      </template>
+
     </div>
 
 </template>
@@ -92,7 +98,8 @@ export default {
 
     onMounted(async () => {
       for (let i = 1; i <= 36; i++) {
-        const src = require(`@/assets/img/fridges_new/${i}.png`)
+        // const src = require(`@/assets/img/fridges_new/${i}.png`)
+        const src = require(`@/assets/img/fridges3/${i}.png`)
         const alt = `fridge+&${i}`
         images.value.push({ src, alt })
       }

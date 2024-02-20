@@ -15,7 +15,7 @@
 
             <div class="navContent">
               <router-link to="/products">Ассортимент</router-link>
-              <router-link to="/about-us">О Компании</router-link>
+              <router-link to="/news">Новости</router-link>
               <router-link to="/development">Веб-разработка</router-link>
               <router-link to="/contacts">Контакты</router-link>
               <router-link to="/downloads" class="no-after a-download">
@@ -41,7 +41,7 @@
               <ul id="menu">
                 <router-link @click="checkInput" to="/">Главная</router-link>
                 <router-link @click="checkInput" to="/products">Ассортимент</router-link>
-                <router-link @click="checkInput" to="/about-us">О Компании</router-link>
+                <router-link @click="checkInput" to="/news">Новости</router-link>
                 <router-link @click="checkInput" to="/development">Веб-разработка</router-link>
                 <router-link @click="checkInput" to="/contacts">Контакты</router-link>
               </ul>

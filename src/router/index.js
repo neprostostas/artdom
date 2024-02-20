@@ -7,7 +7,7 @@ import ProductsFridges from "@/pages/ProductsFridges";
 import ProductsSelf from "@/pages/ProductsSelf";
 import ProductsStorage from "@/pages/ProductsStorage";
 import ProductsStorageRooms from "@/pages/ProductsStorageRooms";
-import AboutUs from "@/pages/AboutUs";
+import News from "@/pages/News";
 import Contacts from "@/pages/Contacts";
 import Development from "@/pages/Development";
 import Downloads from "@/pages/Downloads";
@@ -33,9 +33,9 @@ const routes = [
     component: Products,
   },
   {
-    path: "/about-us",
-    name: "AboutUs",
-    component: AboutUs,
+    path: "/news",
+    name: "News",
+    component: News,
   },
   {
     path: "/contacts",
