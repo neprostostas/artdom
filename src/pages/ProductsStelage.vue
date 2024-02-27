@@ -8,6 +8,18 @@
         <video id="video-tag" playsinline autoplay loop muted>
           <source src="../../src/assets/video/stelage1.mp4" type="video/mp4">
         </video>
+        <video id="video-tag" playsinline autoplay loop muted>
+          <source src="../../src/assets/video/stelage2.mp4" type="video/mp4">
+        </video>
+        <video id="video-tag" playsinline autoplay loop muted>
+          <source src="../../src/assets/video/stelage3.mp4" type="video/mp4">
+        </video>
+        <video id="video-tag" playsinline autoplay loop muted>
+          <source src="../../src/assets/video/stelage4.mp4" type="video/mp4">
+        </video>
+        <video id="video-tag" playsinline autoplay loop muted>
+          <source src="../../src/assets/video/stelage5.mp4" type="video/mp4">
+        </video>
       </div>
 
       <div>
