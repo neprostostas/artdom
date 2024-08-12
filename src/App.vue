@@ -22,6 +22,10 @@ export default {
 
 <style>
 
+  html, body {
+    overscroll-behavior: none;
+  }
+
   body {
     background: #2d2d2d;
   }
